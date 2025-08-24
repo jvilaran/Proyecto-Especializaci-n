@@ -1,14 +1,267 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Home</title>
 </head>
 <body>
-    <h1>Bienvenido a mi página web, una breve historia sobre los videojuegos</h1>
-    <h2>Breve descripción</h2>
-    <h2>Galeria de imagenes</h2>
-    <h2>Sección interactiva con formulario</h2>
+    <nav>
+        <ul>
+            <li><a href="#hero_section">Inicio</a></li>
+            <li><a href="#gallery_section">Galeria</a></li>
+            <li><a href="#form_section">Formulario</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="title" id="hero_section">
+            <h1>
+                Bienvenido/a a mi página web, <br>
+                una breve historia sobre los videojuegos
+            </h1>
+            <p>
+                Como amante de los videojuegos, quiero mostrar una breve historia sobre su evolución. <br>
+                En esta página, mediante una línea temporal, se mostrarán títulos que han marcado su historia.
+            </p>
+            <br>
+            <img src="assets/images/main/header.jpeg" alt="" class="header-image">
+        </div>
+    </header>
+
+    <br>
+
+    <main>
+        <div id="main_section">
+            <div>
+                <h2 class="title">Historia de los videojuegos - Línea temporal</h2>
+                <br>
+                <p class="subtitle">Después del 1950, se tienen los años de nacimiento y experimentación...</p>
+            </div>
+            
+            <div class="decada-container">
+                <div class="item">
+                    <h3>
+                        <span>
+                            <img src="assets/images/main/palanca.png" alt="">
+                        </span>
+                        Decada de 1950 - Orígenes experimentales
+                    </h3>
+                    <ul>
+                        <li>1952 – OXO: Primer videojuego conocido (versión digital del tres en raya).</li>
+                        <li>1958 – Tennis for Two: Juego creado en un osciloscopio, precursor de Pong.</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <h3>
+                        <span>
+                            <img src="assets/images/main/palanca.png" alt="">
+                        </span>
+                        Década de 1960 - Innovaciones y experimentación
+                    </h3>
+                    <ul>
+                        <li>1962 – Spacewar!: Uno de los primeros videojuegos de combate espacial.</li>
+                        <li>1966 – Chase: Primer videojuego en utilizar gráficos en movimiento.</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <h3>
+                        <span>
+                            <img src="assets/images/main/palanca.png" alt="">
+                        </span>
+                        Década de 1970 - Nacimiento de la industria
+                    </h3>
+                    <ul>
+                        <li>1972 – Pong (Atari): Primer videojuego comercialmente exitoso.</li>
+                        <li>1978 – Space Invaders: Popularizó las recreativas y marcó el inicio del fenómeno arcade.</li>
+                    </ul>
+                </div>
+                
+                <div class="item">
+                    <h3>
+                        <span>
+                            <img src="assets/images/main/maquina.png" alt="">
+                        </span>
+                        Década de 1980 - Edad dorada de los arcades y consolas
+                    </h3>
+                    <ul>
+                        <li>1980 – Pac-Man: Icono cultural y referente de los videojuegos.</li>
+                        <li>1981 – Donkey Kong: Introducción de Mario (Jumpman).</li>
+                        <li>1985 – Super Mario Bros. (Nintendo NES): Revolucionó el diseño de plataformas y consolidó a Nintendo.</li>
+                        <li>1986 – The Legend of Zelda: Abrió camino a la exploración y aventura.</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <h3>
+                        <span>
+                            <img src="assets/images/main/tetris.png" alt="">
+                        </span>
+                        Década de 1989 - Juegos de puzzle y portátiles
+                    </h3>
+                    <ul>
+                        <li>1989 – Tetris (Game Boy): Popularizó el juego portátil.</li>
+                    </ul>
+                </div>
+                
+                <div class="item">
+                    <h3>
+                        <span>
+                            <img src="assets/images/main/consola.png" alt="">
+                        </span>
+                        Década de 1990 – Consolas de 16/32 bits y 3D</h3>
+                    <ul>
+                        <li>1991 – Sonic the Hedgehog (Sega): Rival directo de Mario, icono de Sega.</li>
+                        <li>1992 – Mortal Kombat: Introducción de violencia gráfica, influyó en la creación de la ESRB.</li>
+                        <li>1996 – Pokémon (Game Boy): Fenómeno mundial de RPG y coleccionismo.</li>
+                        <li>1996 – Super Mario 64 (Nintendo 64): Marcó el estándar en juegos 3D.</li>
+                        <li>1997 – Final Fantasy VII (PlayStation): Expansión del RPG japonés a escala global.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <br>
+
+            <div>
+                <p class="subtitle">Años 2000, auge de los videojuegos y evolución exponencial...</p>
+            </div>
+
+            <div class="decada-container">
+                <div class="item">
+                    <h3>
+                        <span>
+                            <img src="assets/images/main/mando_antiguo.png" alt="">
+                        </span>
+                        Década de 2000 – Online y realismo gráfico
+                    </h3>
+                    <ul>
+                        <li>2001 – Halo: Combat Evolved (Xbox): Definió el FPS en consolas.</li>
+                        <li>2004 – World of Warcraft: Popularizó los MMORPG online.</li>
+                        <li>2006 – Wii Sports (Nintendo Wii): Introdujo el control por movimiento.</li>
+                        <li>2007 – Call of Duty 4: Modern Warfare: Revolucionó los shooters multijugador.</li>
+                    </ul>
+                </div>
+                
+                <div class="item">
+                    <h3>
+                        <span>
+                            <img src="assets/images/main/teclado.png" alt="">
+                        </span>
+                        Década de 2010 – Expansión masiva y eSports
+                    </h3>
+                    <ul>
+                        <li>2011 – Minecraft: Juego creativo más vendido de la historia.</li>
+                        <li>2013 – The Last of Us: Elevó la narrativa en videojuegos.</li>
+                        <li>2016 – Pokémon GO: Llevó la realidad aumentada al público masivo.</li>
+                        <li>2017 – Fortnite: Popularizó el battle royale y los juegos como servicio.</li>
+                    </ul>
+                </div>
+                
+                <div class="item">
+                    <h3>
+                        <span>
+                            <img src="assets/images/main/mando_actual.png" alt="">
+                        </span>
+                        Década de 2020 – Juegos como plataforma social
+                    </h3>
+                    <ul>
+                        <li>2020 – Animal Crossing: New Horizons: Fenómeno en pandemia.</li>
+                        <li>2020 – Among Us: Popularidad global gracias al juego social online.</li>
+                        <li>2022 – Elden Ring: Referente moderno de mundo abierto desafiante.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <br>
+
+        <div class="gallery_section" id="gallery_section">
+            <h2 class="title">Galería de imágenes</h2>
+            <br>
+            <p class="subtitle">Títulos "clásicos"</p>
+            <br>
+            <div>
+                <ul class="gallery">
+                    <li class="gallery_item">
+                        <img src="/assets/images/90/oxo.jpg" alt="" class="game-image">
+                        <p>OXO</p>
+                    </li>
+                    <li class="gallery_item">
+                        <img src="/assets/images/90/tennis_for_two.jpg" alt="" class="game-image">
+                        <p>Tennis for Two</p>
+                    </li>
+                    <li class="gallery_item">
+                        <img src="/assets/images/90/pong.png" alt="" class="game-image">
+                        <p>Pong</p>
+                    </li>
+                    <li class="gallery_item">
+                        <img src="/assets/images/90/space_invaders.jpeg" alt="" class="game-image">
+                        <p>Space Invaders</p>
+                    </li>
+                    <li class="gallery_item">
+                        <img src="/assets/images/90/pac_man.jpg" alt="" class="game-image">
+                        <p>Pac-Man</p>
+                    </li>
+                    <li class="gallery_item">
+                        <img src="/assets/images/90/super_mario_bros.jpg" alt="" class="game-image">
+                        <p>Super Mario Bros</p>
+                    </li>
+                </ul>
+            </div>
+            
+            <br>
+
+            <p class="subtitle">Títulos "futuristas"</p>
+
+            <br>
+
+            <div>
+                <div>
+                    <ul class="gallery">
+                        <li class="gallery_item">
+                            <img src="/assets/images/2000/halo.jpg" alt="" class="game-image">
+                            <p>Halo</p>
+                        </li>
+                        <li class="gallery_item">
+                            <img src="/assets/images/2000/wow.jpg" alt="" class="game-image">
+                            <p>World of Warcraft</p>
+                        </li>
+                        <li class="gallery_item">
+                            <img src="/assets/images/2000/call_of_duty.jpg" alt="" class="game-image">
+                            <p>Call of Duty</p>
+                        </li>
+                        <li class="gallery_item">
+                            <img src="/assets/images/2000/minecraft.jpg" alt="" class="game-image">
+                            <p>Minecraft</p>
+                        </li>
+                        <li class="gallery_item">
+                            <img src="/assets/images/2000/fortnite.jpg" alt="" class="game-image">
+                            <p>Fortnite</p>
+                        </li>
+                        <li class="gallery_item">
+                            <img src="/assets/images/2000/elden_ring.jpg" alt="" class="game-image">
+                            <p>Elden Ring</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="form_section" id="form_section">
+            <h2>Sección interactiva con formulario</h2>
+            <p>Si deseas dejar tu opinión, por favor completa el siguiente formulario:</p>
+            <form action="index.js">
+                <label for="user-input">Ingresa tu usuario:</label>
+                <input type="text" id="user-input">
+                <label for="user-input">Ingresa tu comentario:</label>
+                <input type="text" id="user-input">
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </main>
 </body>
 </html>
