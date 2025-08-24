@@ -1,0 +1,22 @@
+{
+  "name": "project_videogames",
+  "version": "1.0.0",
+  "description": "Project about the history of videogames",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jvilaran/Proyecto-Especializaci-n.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jvilaran/Proyecto-Especializaci-n/issues"
+  },
+  "homepage": "https://github.com/jvilaran/Proyecto-Especializaci-n#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
