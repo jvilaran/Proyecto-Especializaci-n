@@ -25,7 +25,7 @@
                 En esta página, mediante una línea temporal, se mostrarán títulos que han marcado su historia.
             </p>
             <br>
-            <img src="assets/images/main/header.jpeg" alt="" class="header-image">
+            <img src="/assets/images/main/header.jpeg" alt="" class="header-image">
         </div>
     </header>
 
@@ -43,7 +43,7 @@
                 <div class="item">
                     <h3>
                         <span>
-                            <img src="assets/images/main/palanca.png" alt="">
+                            <img src="/assets/images/main/palanca.png" alt="">
                         </span>
                         Decada de 1950 - Orígenes experimentales
                     </h3>
@@ -56,7 +56,7 @@
                 <div class="item">
                     <h3>
                         <span>
-                            <img src="assets/images/main/palanca.png" alt="">
+                            <img src="/assets/images/main/palanca.png" alt="">
                         </span>
                         Década de 1960 - Innovaciones y experimentación
                     </h3>
@@ -69,7 +69,7 @@
                 <div class="item">
                     <h3>
                         <span>
-                            <img src="assets/images/main/palanca.png" alt="">
+                            <img src="/assets/images/main/palanca.png" alt="">
                         </span>
                         Década de 1970 - Nacimiento de la industria
                     </h3>
@@ -82,7 +82,7 @@
                 <div class="item">
                     <h3>
                         <span>
-                            <img src="assets/images/main/maquina.png" alt="">
+                            <img src="/assets/images/main/maquina.png" alt="">
                         </span>
                         Década de 1980 - Edad dorada de los arcades y consolas
                     </h3>
@@ -97,7 +97,7 @@
                 <div class="item">
                     <h3>
                         <span>
-                            <img src="assets/images/main/tetris.png" alt="">
+                            <img src="/assets/images/main/tetris.png" alt="">
                         </span>
                         Década de 1989 - Juegos de puzzle y portátiles
                     </h3>
@@ -109,7 +109,7 @@
                 <div class="item">
                     <h3>
                         <span>
-                            <img src="assets/images/main/consola.png" alt="">
+                            <img src="/assets/images/main/consola.png" alt="">
                         </span>
                         Década de 1990 – Consolas de 16/32 bits y 3D</h3>
                     <ul>
@@ -132,7 +132,7 @@
                 <div class="item">
                     <h3>
                         <span>
-                            <img src="assets/images/main/mando_antiguo.png" alt="">
+                            <img src="/assets/images/main/mando_antiguo.png" alt="">
                         </span>
                         Década de 2000 – Online y realismo gráfico
                     </h3>
@@ -147,7 +147,7 @@
                 <div class="item">
                     <h3>
                         <span>
-                            <img src="assets/images/main/teclado.png" alt="">
+                            <img src="/assets/images/main/teclado.png" alt="">
                         </span>
                         Década de 2010 – Expansión masiva y eSports
                     </h3>
@@ -162,7 +162,7 @@
                 <div class="item">
                     <h3>
                         <span>
-                            <img src="assets/images/main/mando_actual.png" alt="">
+                            <img src="/assets/images/main/mando_actual.png" alt="">
                         </span>
                         Década de 2020 – Juegos como plataforma social
                     </h3>
@@ -174,8 +174,8 @@
                 </div>
             </div>
         </div>
-        
-        <br>
+
+        <hr class="hr1">
 
         <div class="gallery_section" id="gallery_section">
             <h2 class="title">Galería de imágenes</h2>
@@ -193,7 +193,7 @@
                         <p>Tennis for Two</p>
                     </li>
                     <li class="gallery_item">
-                        <img src="/assets/images/90/pong.png" alt="" class="game-image">
+                        <img src="/assets/images/90/pong.jpg" alt="" class="game-image">
                         <p>Pong</p>
                     </li>
                     <li class="gallery_item">
@@ -251,17 +251,37 @@
 
         <br>
 
+        <hr class="hr2">
+
         <div class="form_section" id="form_section">
-            <h2>Sección interactiva con formulario</h2>
-            <p>Si deseas dejar tu opinión, por favor completa el siguiente formulario:</p>
-            <form action="index.js">
-                <label for="user-input">Ingresa tu usuario:</label>
-                <input type="text" id="user-input">
-                <label for="user-input">Ingresa tu comentario:</label>
-                <input type="text" id="user-input">
-                <input type="submit" value="Enviar">
+            <h2 class="title">¡Deja tu comentario!</h2>
+            <form method="post" action="/guardar" class="form_comment">
+                <p>Si deseas dejar tu opinión, por favor llena el siguiente campo:</p>
+                <input type="text" id="user-input" name="comentario" placeholder="Escribe tu comentario" required>
+                <button type="submit">Enviar</button>
             </form>
         </div>
+        
+        <br>
+
+        <div id="comments_section">
+            <h3>Comentarios guardados en sesión:</h3>
+            <ul id="comments-list"></ul>
+        </div>
+        
+
+        <script>
+            fetch("/comments")
+            .then(res => res.json())
+            .then(data => {
+                const lista = document.getElementById("comments-list");
+                data.forEach(c => {
+                const li = document.createElement("li");
+                li.textContent = c;
+                lista.appendChild(li);
+                });
+            });
+        </script>
     </main>
 </body>
 </html>
